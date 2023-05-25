@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    font-family: "Hanken grotesk", sans-serif;
+}
+
+body {
+    background-color: #ebf1ff;
+}
+
+.main-container {
+    display: flex;
+    width: 750px;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+.left-side-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    background: rgb(23,18,107);
+    background: linear-gradient(360deg, rgb(48, 41, 173) 0%, rgb(60, 57, 221) 82%, rgb(86, 86, 241) 100%, rgb(94, 51, 196) 100%);
+}
+
+.your-result-label {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    color: #ebf1ff;
+    opacity: 0.7;
+}
+
+.circle {
+    width: 50%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    justify-content: center;
+    align-self: center;
+    background: rgb(23,18,107);
+    background: linear-gradient(180deg, rgb(43, 38, 141) 0%, rgb(55, 52, 209) 82%, rgb(62, 62, 199) 100%, rgb(78, 62, 216) 100%);
+}
+
+.result {
+    font-size: 5rem;
+    color: white;
+}
+
+.of100 {
+    font-size: 1rem;
+    color: #ebf1ff;
+    opacity: 0.7;
+}
+
+.greeting {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.conclusion {
+   width: 60%;
+   display: flex;
+   align-self: center;
+   color: #ebf1ff;
+    opacity: 0.7;
+}
+
+.right-side-container {
+    width: 50%;
+}
+
+.summary {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.summary-label {
+    margin-left: 35px;
+    color: #303b5a;
+}
+
+.container {
+    display: flex;
+    height: 60%;
+}
+
+.left-section {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-around;
+}
+
+
+.continue {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    align-items: center;
+    height: 17%;
+}
+
+.reaction-score {
+    margin-left: 70px;
+}
+
+.reaction-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.reaction-label, .memory-label {
+    margin-right: 50px;
+}
+
+.verbal-label, .visual-label {
+    margin-right: 65px;
+}
+
+.reaction, .memory, .verbal, .visual {
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+.continue-btn {
+    margin-left: 2px;
+    border: none;
+    width: 285px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #303b5a;
+    color: white;
+}
+
+.reaction {
+    background-color: #f5d9d9;
+    color: #e72020;
+}
+
+.memory {
+    background-color: #f7e9d1;
+    color: #ffb01f;
+}
+
+.verbal {
+    background-color: #d7f7ef;
+    color: #00bd91;
+}
+
+.visual {
+    background-color: #d2d6f8;
+    color: #1125d4;
+}
+
+.score-first {
+    color: black;
+    font-weight: bold;
+}
+
+.score-second {
+    color: black;
+    opacity: 0.5;
+}
+
+.continue-btn:hover {
+    background: rgb(23,18,107);
+    background: linear-gradient(360deg, rgb(48, 41, 173) 0%, rgb(60, 57, 221) 82%, rgb(86, 86, 241) 100%, rgb(94, 51, 196) 100%);
+}
+
+.score-first {
+    color: #303b5a;
+}
+
+@media screen and (max-width: 800px){
+
+.main-container {
+    flex-direction: column;
+    width: 376px;
+    height: 100%;
+}
+
+.left-side-container {
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.your-result-label {
+    padding-top: 5px;
+    font-size: 1rem;
+}
+
+.circle {
+    width: 35%;
+    height: 120px;
+    margin-top: -5px;
+}
+
+.result {
+    font-size: 4rem;
+}
+
+.of100 {
+    margin-top: -5px;
+}
+
+.greeting {
+    font-size: 2rem;
+    margin-top: -3px;
+}
+
+.conclusion {
+   width: 75%;
+   padding-bottom: 20px;
+}
+
+.right-side-container {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.container {
+    height:  100%;
+    font-size: 1.5rem;
+}
+
+.left-section {
+    width: 93%;
+}
+
+.continue {
+    height: 25%;
+}
+
+.reaction, .memory, .verbal, .visual {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.reaction {
+    margin-top: 10px;
+}
+
+.reaction-score {
+    margin-left: 30px;
+}
+
+.reaction-label, .memory-label {
+    font-size: 18px;
+    margin-right: 80px;
+}
+
+.verbal-label, .visual-label {
+    font-size: 18px;
+    margin-right: 100px;
+}
+
+.reaction, .memory, .verbal, .visual {
+    width: 90%;
+}
+
+.continue-btn {
+    height: 50px;
+}
+
+.score-first, .score-second {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+}
